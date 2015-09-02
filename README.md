@@ -1,4 +1,12 @@
-# particle_dosimetry_reference_environment
+### What is this? 
+This is a template for a reference environment.  It has a standard set of scripts to install packages, get code and set things up.  
 
-Reference environment for particle dosimetry project
-Includes python scipy stack, MATLAB compiler, and code for particle dosimetry
+### How do I use it?
+
+```
+$ git clone https://github.com/uomsystemsbiology/reference_environment_template.git
+$ cd reference_environment_template
+$ vagrant up
+```
+This will build a virtual environment and run through each of the scripts with examples
+of use.  
