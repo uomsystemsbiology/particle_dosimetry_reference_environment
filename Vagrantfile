@@ -37,7 +37,7 @@ end
 # Provider details
 config.vm.provider "virtualbox" do |vb,override|
 	vb.gui = true
-	override.vm.box = "uomsystemsbiology/base-vbox"
+	override.vm.box = "uomsystemsbiology/base64-vbox"
 end
 
 config.vm.provider "docker" do |docker,override|
