@@ -23,10 +23,11 @@ echo Adding MATLAB Runtime library paths | tee -a $log
 printf "/usr/local/MATLAB/MATLAB_Runtime/v85/runtime/glnxa64\n/usr/local/MATLAB/MATLAB_Runtime/v85/bin/glnxa64\n/usr/local/MATLAB/MATLAB_Runtime/v85/sys/os/glnxa64\n" | sudo tee /etc/ld.so.conf.d/matlab_runtime.conf
 
 echo Copying shell script to home directory | tee -a $log
-sudo cp /vagrant/temp/data/run_experiments.sh /home/sbl/run_experiments.sh
-sudo chmod 777 /home/sbl/run_experiments.sh
+sudo cp /vagrant/temp/data/*.sh /home/sbl/*.sh
+sudo chmod 777 /home/sbl/*.sh
 
-echo Linking the shell script into the root folder | tee -a $log
-sudo ln -sv /home/sbl/run_experiments.sh /run_experiments.sh
+echo Copying compiled MATLAB code to home directory | tee -a $log
+sudo cp -R /vagrant/temp/data/compiled /home/sbl/.
+sudo chmod 777 /home/sbl/compiled/*
 
 echo Completed configure_core.sh | tee -a $log

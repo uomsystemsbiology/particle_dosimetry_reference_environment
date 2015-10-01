@@ -1,5 +1,8 @@
 The default user is 'sbl' password 'sbl'
 This is the content of data\background_text.txt
-Describe the basic instructions to use the environment here, and the
-location of the output files.  Double-click the script below and
+Double-click one of the scripts below and
 select 'Execute in Terminal' to run it
+'run_calculate_dosimetry.sh' calculates expected dose of particle systems used in the paper
+'run_calculate_range_of_dose_disparity.sh' calculates the disparity between vertical and upright cell orientations for a range of particles
+'run_upright_dose_calculation.sh' displays the expected upright dose for a range of particles
+'run_single_particle_movement.sh' simulates the diffusive and sedimentative movement of a single particle, for both particles used in the paper

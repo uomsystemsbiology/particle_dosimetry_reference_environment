@@ -20,9 +20,12 @@ sudo sed -i "s#\(wallpaper *= *\).*#\1$WALLPAPERPATH#" /home/sbl/.config/pcmanfm
 sudo sed -i "s#\(wallpaper_mode *= *\).*#\1fit#" /home/sbl/.config/pcmanfm/lubuntu/desktop-items-0.conf
 sudo sed -i "s#\(desktop_bg *= *\).*#\1\#00447b#" /home/sbl/.config/pcmanfm/lubuntu/desktop-items-0.conf
 
-echo Creating link from shell script on desktop| tee -a $log
-ln -sv /home/sbl/run_experiments.sh /home/sbl/Desktop/run_experiments.sh
-printf "[run_experiments.sh]\nx=10\ny=500\n" >> /home/sbl/.config/pcmanfm/lubuntu/desktop-items-0.conf
+echo Creating link to scripts on desktop| tee -a $log
+ln -sv /home/sbl/run_calculate_dosimetry.sh /home/sbl/Desktop/run_calculate_dosimetry.sh
+printf "[run_calculate_dosimetry.sh]\nx=10\ny=500\n" >> /home/sbl/.config/pcmanfm/lubuntu/desktop-items-0.conf
+ln -sv /home/sbl/run_upright_dose_calculation.sh /home/sbl/Desktop/run_upright_dose_calculation.sh
+ln -sv /home/sbl/run_calculate_range_of_dose_disparity.sh /home/sbl/Desktop/run_calculate_range_of_dose_disparity.sh
+ln -sv /home/sbl/run_single_particle_movement.sh /home/sbl/Desktop/run_single_particle_movement.sh
 
 echo Removing Trash icon from the desktop
 sudo sed -i "s#\(show_trash *= *\).*#\10#" /home/sbl/.config/pcmanfm/lubuntu/desktop-items-0.conf
