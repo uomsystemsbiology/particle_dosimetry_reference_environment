@@ -24,8 +24,12 @@ echo Creating link to scripts on desktop| tee -a $log
 ln -sv /home/sbl/run_calculate_dosimetry.sh /home/sbl/Desktop/run_calculate_dosimetry.sh
 printf "[run_calculate_dosimetry.sh]\nx=10\ny=500\n" >> /home/sbl/.config/pcmanfm/lubuntu/desktop-items-0.conf
 ln -sv /home/sbl/run_upright_dose_calculation.sh /home/sbl/Desktop/run_upright_dose_calculation.sh
+printf "[run_upright_dose_calculation.sh]\nx=160\ny=500\n" >> /home/sbl/.config/pcmanfm/lubuntu/desktop-items-0.conf
 ln -sv /home/sbl/run_calculate_range_of_dose_disparity.sh /home/sbl/Desktop/run_calculate_range_of_dose_disparity.sh
+printf "[run_calculate_range_of_dose_disparity.sh]\nx=310\ny=500\n" >> /home/sbl/.config/pcmanfm/lubuntu/desktop-items-0.conf
 ln -sv /home/sbl/run_single_particle_movement.sh /home/sbl/Desktop/run_single_particle_movement.sh
+printf "[run_single_particle_movement.sh]\nx=460\ny=500\n" >> /home/sbl/.config/pcmanfm/lubuntu/desktop-items-0.conf
+
 
 echo Removing Trash icon from the desktop
 sudo sed -i "s#\(show_trash *= *\).*#\10#" /home/sbl/.config/pcmanfm/lubuntu/desktop-items-0.conf
