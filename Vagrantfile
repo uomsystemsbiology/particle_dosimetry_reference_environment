@@ -37,6 +37,7 @@ end
 # Provider details
 config.vm.provider "virtualbox" do |vb,override|
 	vb.gui = true
+	vb.memory = 4096
 	override.vm.box = "uomsystemsbiology/base64-vbox"
 end
 
