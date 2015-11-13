@@ -12,7 +12,7 @@ You will need virtualbox, available here: https://www.virtualbox.org/wiki/Downlo
 
 
 ### How do I use it?
-Once you have installed he above tools, open up a command prompt and type the following:
+Once you have installed the above tools, open up a command prompt and type the following:
 
 ```
 $ git clone https://github.com/uomsystemsbiology/reference_environment_template.git
