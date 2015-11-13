@@ -15,7 +15,7 @@ Virtualbox, available here: https://www.virtualbox.org/wiki/Downloads
 Once you have installed the above tools, open up a command prompt and type the following:
 
 ```
-$ git clone https://github.com/uomsystemsbiology/reference_environment_template.git
+$ git clone https://github.com/uomsystemsbiology/particle_dosimetry_reference_environment
 $ cd reference_environment_template
 $ vagrant up
 ```
