@@ -16,7 +16,7 @@ Once you have installed the above tools, open up a command prompt and type the f
 
 ```
 $ git clone https://github.com/uomsystemsbiology/particle_dosimetry_reference_environment
-$ cd reference_environment_template
+$ cd particle_dosimetry_reference_environment
 $ vagrant up
 ```
 
